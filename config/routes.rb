@@ -1,8 +1,16 @@
 WatchMe::Application.routes.draw do
-  get "users/new"
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
+
+  root :to => 'pages#home'
+
+  match '/contact', :to => 'pages#contact', via: :get
+  match '/about', :to => 'pages#about', via: :get
+  match '/help', :to => 'pages#help', via: :get
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
