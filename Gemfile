@@ -49,6 +49,9 @@ end
 
 gem 'spork-rails'
 
+group :test do
+gem 'webrat'
+end
 
 
 
