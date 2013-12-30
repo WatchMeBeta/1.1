@@ -39,14 +39,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
-	gem 'rspec' , '2.0.0.beta18'
+group :development do
+	gem 'rspec-rails' , '~> 3.0.0.beta'
 end
 
-group :development do
-  gem 'taps'
-  gem 'rvm'
+group :test do
+	gem 'rspec' , '~> 3.0.0.beta'
 end
+
+gem 'spork-rails'
+
+
 
 
 
